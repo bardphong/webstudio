@@ -1,0 +1,50 @@
+*
+{
+    font-family: 'Roboto';
+}
+.logo
+{
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: bold;
+}
+nav
+{
+    text-decoration: none;
+
+}
+.hero
+{
+    text-align: center;
+    background-color: #2F303A;
+        h1
+        {
+            font-size: 44px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+        }
+        button
+        {
+            background-color: #2196F3;
+            font-weight: bold;
+            padding-block: 15px;
+            color: #FFFFFF;
+        }
+}
+.container3
+{
+    background-color: #F5F4FA;
+}
+
+
+footer
+{
+    background-color: #2F303A;
+    address
+    {
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+}
