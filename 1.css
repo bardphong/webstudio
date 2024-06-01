@@ -1,50 +1,107 @@
+:root li
+{
+    list-style-type: none;
+}
+:root a
+{
+    text-decoration: none;
+}
 *
 {
+    
     font-family: 'Roboto';
 }
+header
+{
+    background-color: #ECECEC;
+}
+header a
+{
+    color: #212121;
+    font-weight: 500;
+}
+header a:hover
+{
+    color: #2196F3;
+}
+
 .logo
 {
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: bold;
-}
-nav
-{
     text-decoration: none;
+}
+.logo_span1
+{
+    color:#2196F3;
 
 }
+.logo_span2
+{
+    color: #000000
+}
+
 .hero
 {
     text-align: center;
     background-color: #2F303A;
-        h1
-        {
-            font-size: 44px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #FFFFFF;
-        }
-        button
-        {
-            background-color: #2196F3;
-            font-weight: bold;
-            padding-block: 15px;
-            color: #FFFFFF;
-        }
+    box-sizing: border-box;
+    padding: 200px 0px 200px 0px;
+}
+h1
+{
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.zakaz
+{
+    background-color: #2196F3;
+    font-weight: bold;
+    padding-block: 15px;
+    color: #FFFFFF;
+    cursor:pointer;
+    border-radius: 10px;
+}
+.container1 ul
+{
+    margin: 94px 215px;
+}
+.container2 
+{
+    margin:0px 215px 99px 215px;
+    text-align: center;
 }
 .container3
 {
+    text-align: center;
     background-color: #F5F4FA;
+
 }
-
-
+.container3 ul
+{
+    padding: 50px 215px 94px 215px;
+    margin: 0px;
+}
+.container3 h2
+{
+    padding-top: 94px;
+}
 footer
 {
     background-color: #2F303A;
-    address
-    {
-        color: #FFFFFF;
-        font-size: 14px;
-    }
+    ;
 }
+address
+{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+address ul
+{
+    margin:0px;
+}
+
