@@ -1,6 +1,8 @@
 :root li
 {
     list-style-type: none;
+    font-style: normal;
+    box-sizing: border-box;
 }
 :root a
 {
@@ -10,6 +12,10 @@
 {
     
     font-family: 'Roboto';
+}
+* ul, ol, figure, h2, h3
+{
+    margin: 0;
 }
 header
 {
@@ -24,7 +30,43 @@ header a:hover
 {
     color: #2196F3;
 }
+h1
+{
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+footer
+{
+    background-color: #2F303A;
+    
+}
+footer a
+{
+    color: rgb(255, 255, 255, 0.6)
+}
+footer .logo
+{
+    padding-top: 60px;
+}
+footer li
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer li :last-child
+{
+    padding-bottom: 55px;
+}
+address
+{
+    color: #FFFFFF;
+    font-size: 14px;
+}
 
+/*Классы */
 .logo
 {
     font-family: 'Raleway';
@@ -39,69 +81,66 @@ header a:hover
 }
 .logo_span2
 {
-    color: #000000
+    color: #000000;
 }
-
+footer .logo_span2
+{
+    color: #FFFFFF;
+}
 .hero
 {
     text-align: center;
     background-color: #2F303A;
-    box-sizing: border-box;
-    padding: 200px 0px 200px 0px;
+    padding: 200px 0px;
 }
-h1
-{
-    font-size: 44px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-}
-.zakaz
+
+.button_zakaz
 {
     background-color: #2196F3;
     font-weight: bold;
     padding-block: 15px;
     color: #FFFFFF;
     cursor:pointer;
-    border-radius: 10px;
+    border-radius: 4px;
 }
-.container1 ul
+.container_hero h1
 {
-    margin: 94px 215px;
+    width: 696px;
+    margin: inherit;
 }
-.container2 
+.container
 {
-    margin:0px 215px 99px 215px;
-    text-align: center;
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
 }
-.container3
-{
-    text-align: center;
-    background-color: #F5F4FA;
-
-}
-.container3 ul
-{
-    padding: 50px 215px 94px 215px;
-    margin: 0px;
-}
-.container3 h2
+.strength
 {
     padding-top: 94px;
 }
-footer
-{
-    background-color: #2F303A;
-    ;
+.work h2
+{ 
+    padding-top: 90px;
+    padding-bottom: 50px;
+    text-align: center;
 }
-address
+.team
 {
-    color: #FFFFFF;
-    font-size: 14px;
+    background-color: #F5F4FA;
 }
-address ul
+.team h2
 {
-    margin:0px;
+    padding: 94px 0 50px;
+    text-align: center;
 }
+.team figcaption h3
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.team figcaption span
+{
+    padding-bottom: 30px;
+}
+
 
