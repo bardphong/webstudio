@@ -1,30 +1,29 @@
-:root li
-{
-    list-style-type: none;
-    font-style: normal;
-    box-sizing: border-box;
-}
-:root a
-{
-    text-decoration: none;
-}
 *
 {
-    
     font-family: 'Roboto';
+    box-sizing: border-box;
 }
 * ul, ol, figure, h2, h3
 {
+    font-style: normal;
+    list-style-type: none;
     margin: 0;
 }
-header
+a
 {
-    background-color: #ECECEC;
+    text-decoration: none;
 }
+/* Header */
 header a
 {
     color: #212121;
     font-weight: 500;
+}
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 header a:hover
 {
@@ -38,6 +37,7 @@ h1
     letter-spacing: 1px;
     color: #FFFFFF;
 }
+/* Footer */
 footer
 {
     background-color: #2F303A;
@@ -47,15 +47,9 @@ footer a
 {
     color: rgb(255, 255, 255, 0.6)
 }
-
-footer li
+footer .logo_span2
 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-footer li :last-child
-{
-    padding-bottom: 55px;
+    color: #FFFFFF;
 }
 address
 {
@@ -64,12 +58,23 @@ address
 }
 
 /*Классы */
+
+/* Header Classes */
+.header__nav__list
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+/* Logo Classes */
 .logo
 {
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
+    margin: 25px 0;
 }
 .logo_span1
 {
@@ -80,17 +85,19 @@ address
 {
     color: #000000;
 }
-footer .logo_span2
-{
-    color: #FFFFFF;
-}
+/* Hero Classes */
 .hero
 {
     text-align: center;
     background-color: #2F303A;
     padding: 200px 0px;
 }
-
+.container_hero h1
+{
+    width: 696px;
+    margin: inherit;
+}
+/* Button */
 .button_zakaz
 {
     background-color: #2196F3;
@@ -98,48 +105,120 @@ footer .logo_span2
     padding-block: 15px;
     color: #FFFFFF;
     cursor:pointer;
+    font-size: 16px;
     border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
 }
-.container_hero h1
-{
-    width: 696px;
-    margin: inherit;
-}
+/* Container*/
 .container
 {
     width: 1200px;
     padding: 0px 15px;
     margin: 0px auto;
 }
+/* Strenght Classes */
 .strength
 {
     padding-top: 94px;
 }
+.strength__list
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.strength__elem h3
+{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.strength__elem span
+{
+    color: #757575;
+    font-size: 14px;
+}
+/* Work Classes */
 .work
 {
     padding:89px 0 99px 0;
 }
 .work h2
 { 
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
 }
+.work__list
+{
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+/* Team Classes */
 .team
 {
-    padding-top: 94px;
+    padding: 94px 0;
     background-color: #F5F4FA;
 }
 .team h2
 {
-
+    font-size: 36px;
+    font-weight: bold;
     margin-bottom: 50px;
     text-align: center;
 }
-.team figcaption h3
+.team__list
 {
-    margin-top: 30px;
+    
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.team__elem figure
+{
+    background-color: #FFFFFF;
+}
+.team__elem__figcap
+{
+    padding: 30px 0;
+    text-align: center;
+
+}
+.team__elem__figcap h3
+{
+    font-weight: 500;
+    font-size: 16px;
     margin-bottom: 10px;
 }
+.team__elem__figcap span
+{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Footer Clases */
+.footer__address__list
+{
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer__address__list :not(:last-child)
+{
+    margin-bottom: 15px;
+}
 
-
+.footer__container
+{
+    padding: 60px 0;
+}
 
