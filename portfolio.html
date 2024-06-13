@@ -25,9 +25,15 @@
                 </nav>
                 <ul class="header__contacts">
                     <li>
+                        <svg width="16" height="12">
+                            <use href="./assets/svgs/address.svg#icon-envelope"></use>
+                        </svg>
                         <a class="header__a" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
+                        <svg width="10" height="16">
+                            <use href="./assets/svgs/address.svg#icon-smartphone"></use>
+                        </svg>
                         <a class="header__a" href="tel:+3800961111111">+380 096 111 11 11</a>
                     </li>
                 </ul>
@@ -66,7 +72,12 @@
                 <ul class="main__section__list">
                     <li class="main__section__elem">
                         <figure>
-                            <img width="370" height="294" src="./assets/pictures/website.jpg" alt="website picture">
+                            <div class="main__section__image">
+                            <img  width="370" height="294" src="./assets/pictures/website.jpg" alt="website picture">
+                                <div class="overlay">
+                                    <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                            </div>
                             <figcaption class="main__section__elem__figcap">
                                 <h3>
                                     Технокряк
@@ -75,7 +86,8 @@
                                     Веб-сайт
                                 </span>
                             </figcaption>
-                        </figure>            
+                        </figure>
+               
                     </li>
                     <li class="main__section__elem">
                         <figure>
@@ -189,20 +201,47 @@
     <footer>
         <div class="container">
             <div class="footer__container">
-                <a class="logo"  href="https://webstudio.is" target="_blank"> <span class="logo_span1">Web</span><span class="logo_span2">Studio</span></a>
-                <address class="footer__address">
-                    <ul class="footer__address__list">
-                        <li class="footer__address__elem">
-                            г. Киев, пр-т Леси Украинки, 26
+                <div class="footer__logo__address">
+                    <a class="logo"  href="https://webstudio.is" target="_blank"> <span class="logo_span1">Web</span><span class="logo_span2">Studio</span></a>
+                    <address class="footer__address">
+                        <ul class="footer__address__list">
+                            <li class="footer__address__elem">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </li>
+                            <li class="footer__address__elem">
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="footer__address__elem">
+                                <a href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__span__social">
+                    <span>присоединяйтесь</span>
+                    <ul class="social__list">
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-instagram"></use>
+                            </svg>
                         </li>
-                        <li class="footer__address__elem">
-                            <a href="mailto:info@example.com">info@example.com</a>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-twitter"></use>
+                            </svg>
                         </li>
-                        <li class="footer__address__elem">
-                            <a href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-linkedin2"></use>
+                            </svg>
                         </li>
                     </ul>
-                </address>
+                </div>    
             </div>    
         </div>
     </footer>

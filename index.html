@@ -25,9 +25,15 @@
                 </nav>
                 <ul class="header__contacts">
                     <li>
+                        <svg width="16" height="12">
+                            <use href="./assets/svgs/address.svg#icon-envelope"></use>
+                        </svg>
                         <a class="header__a" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
+                        <svg width="10" height="16">
+                            <use href="./assets/svgs/address.svg#icon-smartphone"></use>
+                        </svg>
                         <a class="header__a" href="tel:+3800961111111">+380 096 111 11 11</a>
                     </li>
                 </ul>
@@ -81,13 +87,25 @@
                 <ul class="work__list">
                     <li class="work__elem"><img width="370" height="294" 
                         src="./assets/pictures/coding.png" 
-                        alt="чел печатает"></li>
+                        alt="чел печатает">
+                        <div class="work__elem__label">
+                            <span>Десктопные приложения</span>
+                        </div>
+                    </li>
                     <li class="work__elem"><img width="370" height="294"  
                         src="./assets/pictures/phone.png" 
-                        alt="чел держит телефон перед компами"></li>
+                        alt="чел держит телефон перед компами">
+                        <div class="work__elem__label">
+                            <span>Мобильные приложения</span>
+                        </div>
+                    </li>
                     <li class="work__elem"><img width="370" height="294" 
                         src="./assets/pictures/tablet.png" 
-                        alt="чел чето рисует перед компом"></li>
+                        alt="чел чето рисует перед компом">
+                        <div class="work__elem__label">
+                            <span>Дизайнерские решения</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -237,32 +255,32 @@
                 <ul class="clients__list">
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="./assets/svgs/clients.svg#yaco"></use>
                         </svg>
                     </li>
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="../assets/svgs/clients.svg#company_tagline_prompt"></use>
                         </svg>
                     </li>
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="./assets/svgs/clients.svg#company_prompt"></use>
                         </svg>
                     </li>
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="./assets/svgs/clients.svg#foster_peters"></use>
                         </svg>
                     </li>
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="./assets/svgs/clients.svg#brand_prompt"></use>
                         </svg>
                     </li>
                     <li class="clients__elem">
                         <svg>
-                            <use></use>
+                            <use href="./assets/svgs/clients.svg#company_tag_line_prompt"></use>
                         </svg>
                     </li>
                 </ul>
@@ -273,44 +291,59 @@
     <footer>
         <div class="container">
             <div class="footer__container">
-                <a class="logo"  href="https://webstudio.is" target="_blank"> <span class="logo_span1">Web</span><span class="logo_span2">Studio</span></a>
-                <address class="footer__address">
-                    <ul class="footer__address__list">
-                        <li class="footer__address__elem">
-                            г. Киев, пр-т Леси Украинки, 26
+                <div class="footer__logo__address">
+                    <a class="logo"  href="https://webstudio.is" target="_blank"> <span class="logo_span1">Web</span><span class="logo_span2">Studio</span></a>
+                    <address class="footer__address">
+                        <ul class="footer__address__list">
+                            <li class="footer__address__elem">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </li>
+                            <li class="footer__address__elem">
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="footer__address__elem">
+                                <a href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__span__social">
+                    <span>присоединяйтесь</span>
+                    <ul class="social__list">
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-instagram"></use>
+                            </svg>
                         </li>
-                        <li class="footer__address__elem">
-                            <a href="mailto:info@example.com">info@example.com</a>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-twitter"></use>
+                            </svg>
                         </li>
-                        <li class="footer__address__elem">
-                            <a href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="social__elem">
+                            <svg width="20" height="20">
+                                <use href="./assets/svgs/socials.svg#icon-linkedin2"></use>
+                            </svg>
                         </li>
                     </ul>
-                </address>
-                <ul class="social__list">
-                    <li class="social__elem">
-                        <svg width="20" height="20">
-                            <use href="./assets/svgs/socials.svg#icon-instagram"></use>
-                        </svg>
-                    </li>
-                    <li class="social__elem">
-                        <svg width="20" height="20">
-                            <use href="./assets/svgs/socials.svg#icon-twitter"></use>
-                        </svg>
-                    </li>
-                    <li class="social__elem">
-                        <svg width="20" height="20">
-                            <use href="./assets/svgs/socials.svg#icon-facebook"></use>
-                        </svg>
-                    </li>
-                    <li class="social__elem">
-                        <svg width="20" height="20">
-                            <use href="./assets/svgs/socials.svg#icon-linkedin2"></use>
-                        </svg>
-                    </li>
-                </ul>
+                </div>    
             </div>    
         </div>
+        <!-- <div class="modal">
+            <div class="modal-content">
+                <div class="close">
+                    <svg width="11px" height="11px">
+                        <use href="./assets/svgs/cancel.svg#icon-cancel"></use>
+                    </svg>
+                </div>
+            </div>
+          
+        </div>  -->
     </footer>
 </body>
 </html>
