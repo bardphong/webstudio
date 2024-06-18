@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Меджиктрик гей</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -51,10 +51,20 @@
             <div class="container">
                 <ul class="strength__list">
                     <li class="strength__elem">
+                        <div class="strength__elem__top">
+                            <svg class="strength__elem__svg" width="70" height="70"> 
+                                <use href="./assets/svgs/strength.svg#antenna"></use>
+                            </svg>
+                        </div>
                         <h3>Внимание к деталям</h3>
                         <span>Идейные изображения, а также начально повседневной работы по формированию позиции.</span>
                     </li>
                     <li class="strength__elem">
+                        <div class="strength__elem__top">
+                            <svg class="strength__elem__svg" width="70" height="70"> 
+                                <use href="./assets/svgs/strength.svg#clock"></use>
+                            </svg>
+                        </div>
                         <h3>Пунктуальность</h3>
                         <span>
                             Задача организации, в особенности
@@ -63,6 +73,11 @@
                         </span>
                     </li>
                     <li class="strength__elem">
+                        <div class="strength__elem__top">
+                            <svg class="strength__elem__svg" width="70" height="70"> 
+                                <use href="./assets/svgs/strength.svg#diagram"></use>
+                            </svg>
+                        </div>
                         <h3>Планировние</h3>
                         <span>
                             Равным образом косультация с
@@ -71,7 +86,12 @@
                         </span>
                     </li>
                     <li class="strength__elem">
-                        <h3>Конструктор</h3>
+                        <div class="strength__elem__top">
+                            <svg class="strength__elem__svg" width="70" height="70"> 
+                                <use href="./assets/svgs/strength.svg#astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3>Современные технологии</h3>
                         <span>
                             Значимость этих проблем настолько
                             очевидна, что реализация плановых
@@ -331,19 +351,85 @@
                             </svg>
                         </li>
                     </ul>
+                </div>
+                <div class="footer__span__input">
+                    <span>Подпишитесь на рассылку</span>
+                    <ul class="footer__input__list">
+                        <li class="footer__input__elem">
+                            <input class="footer__input__input" type="text" value="E-Mail">
+                        </li>
+                        <li class="footer__input__elem">
+                            <button class="footer__input__button " type="submit">Подписаться<svg width="24" height="24"><use href="./assets/svgs/send.svg#send"></use></svg></button>
+                        </li>
+                    </ul>
                 </div>    
             </div>    
         </div>
-        <!-- <div class="modal">
-            <div class="modal-content">
-                <div class="close">
-                    <svg width="11px" height="11px">
-                        <use href="./assets/svgs/cancel.svg#icon-cancel"></use>
-                    </svg>
-                </div>
-            </div>
-          
-        </div>  -->
     </footer>
 </body>
 </html>
+<!-- <div class="modal">
+    <div class="modal-content">
+        <div class="close">
+            <svg width="11px" height="11px">
+                <use href="./assets/svgs/cancel.svg#icon-cancel"></use>
+            </svg>
+        </div>
+        <div class="modal__info">
+            <span class="modal__info__main__span">
+            Оставьте свои данные, мы вам перезвоним
+            </span>
+           <ul class="modal__info__list">
+                <li class="modal__info__elem">
+                    <span>
+                        Имя
+                    </span>
+                    <input type="text">
+                    <svg width="18" height="18">
+                        <use href="./assets/svgs/modal.svg#person">
+                            
+                        </use>
+                    </svg>
+                </li>
+                <li class="modal__info__elem">
+                    <span>
+                        Телефон
+                    </span>
+                    <input type="text">
+                    <svg width="18" height="18">
+                        <use href="./assets/svgs/modal.svg#phone">
+
+                        </use>
+                    </svg>
+                </li>
+                <li class="modal__info__elem">
+                    <span>
+                        Почта
+                    </span>
+                    <input type="text">
+                    <svg width="18" height="18">
+                        <use href="./assets/svgs/modal.svg#email">
+                            
+                        </use>
+                    </svg>
+                </li>
+                <li class="modal__info__elem">
+                    <span>
+                        Комментарий
+                    </span>
+                    <input type="text" value="Введите текст">
+                </li>
+           </ul>
+           <span class="modal__info__agreement">
+            <svg width="16" height="15">
+                <use href="./assets/svgs/modal.svg#checkbox"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю 
+                <a>Условия договора</a>
+           </span>
+           <button class="modal__info__submit" type="submit">Отправить</button>
+        </div>
+
+    </div>
+  
+</div> -->
