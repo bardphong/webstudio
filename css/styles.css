@@ -19,6 +19,9 @@ ul, ol, figure, h2, h3
 input:focus {
     outline:none;
 }
+textarea:focus {
+    outline:none;
+}
 a
 {
     text-decoration: none;
@@ -58,7 +61,7 @@ footer a
 {
     color: rgb(255, 255, 255, 0.6)
 }
-footer .logo_span2
+.footer__logo2
 {
     color: #FFFFFF;
 }
@@ -112,7 +115,7 @@ address
     fill: inherit;
 }
 
-.header__a
+.header__nav__link
 {
     color: #757575;
     font-weight: 500;
@@ -125,16 +128,20 @@ address
     text-decoration: none;
     padding: 25px 0; 
 }
-.logo_span1
+.logo__title1
 {
     color:#2196F3;
     font-family: 'Raleway';
 
 }
-.logo_span2
+.header__logo2
 {
     color: #000000;
     font-family: 'Raleway';
+}
+.logo__title2
+{
+        font-family: 'Raleway';
 }
 /* Hero Classes */
 .hero
@@ -143,13 +150,13 @@ address
     padding: 200px 0px;
     background: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(/assets/pictures/hero_img.jpg) ;
 }
-.container_hero h1
+.hero__title
 {
     width: 696px;
     margin: inherit;
 }
 /* Button */
-.button_zakaz
+.hero__button
 {
     background-color: #2196F3;
     font-weight: bold;
@@ -228,7 +235,7 @@ address
 {
   position: relative;
 }
-.work__elem__label
+.work__elem__description
 {
   position: absolute;
   width: 370px;
@@ -239,7 +246,7 @@ address
   align-items: center;
   bottom:2px;
 }
-.work__elem__label span
+.work__elem__description span
 {
   font-weight: bold;
   text-transform: uppercase;
@@ -381,7 +388,11 @@ address
     align-items: center;
     gap: 70px;
 }
-.footer__span__social span
+.footer__container:last-child
+{
+    justify-content: flex-end;
+}
+.footer__social span
 {
     font-size: 14px;
     text-transform: uppercase;
@@ -399,23 +410,25 @@ footer .social__elem
     fill: #FFFFFF;
 
 }
-.footer__span__input span
+.footer__mailing span
 {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     color: #FFFFFF;
 }
-.footer__input__input
+.footer__mailing__input
 {
     width: 358px;
     height: 50px;
     border-radius: 4px;
     background-color: inherit;
     border: solid 1px #757575;
+    color: #757575;
+    padding: 0 16px;
 
 }
-.footer__input__button
+.footer__mailing__button
 {
     border: none;
     background-color: #2196F3;
@@ -432,16 +445,13 @@ footer .social__elem
     font-weight: bold;
     cursor: pointer;
 }
-.footer__input__list
+.footer__mailing__list
 {
     display: flex;
     gap: 12px;
     margin-top: 20px;
 }
-.footer__container:last-child
-{
-    gap: 93px;
-}
+
 /* Portfolio */
 .main__section
 {
@@ -454,7 +464,7 @@ footer .social__elem
     justify-content: center;
     gap: 8px;
 }
-.main__section__button
+.nav__button
 {
     height: 38px;
     padding: 0;
@@ -470,11 +480,18 @@ footer .social__elem
     font-size: 16px;
     letter-spacing: 0,48px;
 }
-.main__section__button:focus
+.nav__button:focus
 {
     background-color: #2196F3;
     color: white;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+.nav__button--current
+{
+    background-color: #2196F3;
+    color: white;   
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
 }
 .main__section__list
 {
@@ -551,25 +568,31 @@ footer .social__elem
     display: block;
     position: fixed; 
     z-index: 1;
-    padding-top: 221px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
+    left:0;
+    top:0;
+    width: 100vw; 
+    height: 100vh;
     overflow: auto; 
     background-color: rgba(0,0,0,0.4); 
 }
   
-.modal-content 
+.modal__content 
 {
+    position: fixed;
+    left:50%;
+    top:50%;
     background-color: #fefefe;
-    margin: auto;
     width: 528px;
-    height: 581px;
+    padding:40px 0;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
 }
 
 .close 
 {
+    position: absolute;
+    right:8px;
+    top:8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -577,15 +600,13 @@ footer .social__elem
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
-    margin-left: auto;
-    margin-top: 8px;
+
 }
 .close:hover
 {
     cursor: pointer;
 }
-.modal__info__main__span
+.modal__info__main__h2
 {
     font-weight: bold;
     font-size: 20px;
@@ -602,14 +623,23 @@ footer .social__elem
 {
     width: 448px;
     height: 40px;
-    padding-left: 32px;
+    padding-left: 38px;
+    padding-right: 12px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2);
+    border-width: 1px;
 }
-.modal__info__elem:last-child input
+.modal__info__elem textarea
 {
     height: 120px;
     padding: 16px 12px;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2);
+    border-width: 1px;
     
 }
 .modal__info__list
@@ -631,15 +661,20 @@ footer .social__elem
 .modal__info__elem svg
 {
     position: absolute;
-    bottom: 12px;
+    bottom: 10px;
     left: 12px;
+    
 }
 .modal__info__agreement
 {
+    position: relative;
     font-size: 14px;
     font-weight: 500px;
     color: #757575;
     letter-spacing: 0.42px;
+    display: flex;
+    align-items: center;
+    
 }
 .modal__info__agreement a
 {
@@ -670,3 +705,45 @@ footer .social__elem
     letter-spacing: 0.12px;
     color: #757575;
 }
+.modal__info__elem input:focus
+{
+    border-color: #2196F3;
+}
+.modal__info__elem textarea:focus
+{
+    border-color: #2196F3;
+}
+.modal__info__elem input:focus svg 
+{
+    fill: #2196F3;
+}
+.uncheck
+{
+    position: absolute;
+}
+.check
+{
+    z-index: 2;
+    position: absolute;
+    opacity: 0%;
+    cursor: pointer;
+}
+.check:focus, .check:active
+{
+    opacity: 100%;
+}
+.modal__info__agreement input
+{
+    margin: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    opacity: 0%;    
+    margin-right: 7px;
+
+}
+.modal__info__agreement input:focus .check
+{
+    opacity: 100%;
+}
+
