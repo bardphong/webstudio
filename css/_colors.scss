@@ -1,0 +1,10 @@
+$colors:
+(
+    'lightblue': #2196F3,
+    'lightgray': #757575,
+    'cum' : #F5F4FA,
+);
+@function getColor($key) 
+{
+    @return map-get($colors, $key);
+}

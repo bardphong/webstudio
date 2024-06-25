@@ -1,0 +1,65 @@
+@import '/css/colors';
+
+header
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ECECEC;
+
+    .container
+    {
+        display: flex;
+        align-items: center;
+    }
+    a:hover
+    {
+        color: getColor('lightblue');
+    }
+}
+.header__nav
+{
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        margin-right: auto;
+        margin-left: 93px;
+    }
+    &__a
+    {
+        color: #212121;
+        font-weight: 500;
+    }
+    &__link
+    {
+        color: getColor('lightgray');
+        font-weight: 500;
+    }
+}
+.header__contacts
+{
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    
+    &__item
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: getColor('lightblue');
+        fill:getColor('lightblue');
+    }
+    &__icon
+    {
+        fill: getColor('lightgray');      
+    }
+    &__item :hover a 
+    {
+        color: inherit;
+    }
+    &__item :hover svg
+    {
+        fill: inherit;        
+    }
+}

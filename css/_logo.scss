@@ -1,0 +1,27 @@
+@import '/css/colors';
+.logo
+{
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 25px 0; 
+
+    &__title1
+    {
+        color: getColor('lightblue');
+        font-family: 'Raleway';
+    }
+    &__title2
+    {
+        font-family: 'Raleway';
+    }
+}
+.header__logo2
+{
+    color: #000000;
+    font-family: 'Raleway';
+}
+.footer__logo2
+{
+    color: #FFFFFF;
+}

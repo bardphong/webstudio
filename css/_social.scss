@@ -1,0 +1,25 @@
+@import '/css/colors';
+.social__list
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 32px 0;
+}
+.social__elem
+{
+    width: 44px;
+    height: 44px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: #AFB1B8;
+
+    & :hover
+    {
+        cursor: pointer;
+        background-color: getColor('lightblue');
+        fill: #FFFFFF;
+    }
+}
