@@ -1,20 +1,17 @@
-@import '/css/colors';
+@import './utils/colors';
 // ----------------------
-@import '/css/logo';
-@import '/css/header';
-@import '/css/footer';
-@import '/css/hero';
-@import '/css/social';
-@import '/css/strength';
-@import '/css/work';
-@import '/css/team';
-@import '/css/clients';
-@import '/css/portfolio';
-@import '/css/modal';
+@import './base/logo';
+@import './base/social';
+@import './base/base';
+@import './base/container';
+// ----------------------
+@import './components/header';
+@import './components/footer';
+@import './components/hero';
+@import './components/strength';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+@import './components/portfolio';
+@import './components/modal';
 
-.container
-{
-    width: 1200px;
-    padding: 0px 15px;
-    margin: 0px auto;
-}

@@ -1,4 +1,4 @@
-@import '/css/colors';
+
 .social__list
 {
     display: flex;
@@ -15,10 +15,11 @@
     align-items: center;
     border-radius: 50%;
     fill: #AFB1B8;
-
-    & :hover
+    cursor:pointer;
+    
+    &:hover
     {
-        cursor: pointer;
+
         background-color: getColor('lightblue');
         fill: #FFFFFF;
     }

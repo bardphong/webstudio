@@ -1,0 +1,21 @@
+
+.container
+{
+width: 450px;
+margin: 0px auto;
+}
+@media (min-width:481px)
+{
+    .container
+    {
+    width: 738px;
+    }
+}
+@media (min-width:769px)
+{
+    .container
+    {
+    width: 1200px;
+    padding: 0px 15px;
+    }
+}

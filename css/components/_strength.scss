@@ -1,0 +1,81 @@
+.strength
+{
+    padding: 60px 0;
+    
+    &__elem
+    {
+        width: 450px;
+
+        &:not(:last-child)
+        {
+            margin-bottom: 30px;
+        }
+        &__top
+        {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0;
+            background-color: getColor('cum');
+        }
+        & h3
+        {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        & span
+        {
+                color: #757575;
+                line-height: 24px;
+        }
+    }
+    
+}
+@media (min-width:481px)
+{
+
+}
+@media (min-width:769px)
+{
+    .strength
+    {
+        padding-top: 94px;
+        
+        &__list
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &__elem
+        {
+            width: 270px;
+            
+            &__top
+            {
+                display: flex;
+                justify-content: center;
+                padding: 25px 0;
+                background-color: getColor('cum');
+            }
+            & h3
+            {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                margin-top: 30px;
+                text-align: left;
+            }
+            
+            & span
+            {
+                    color: #757575;
+                    line-height: 24px;
+            }
+        }
+        
+    }
+}
