@@ -1,0 +1,69 @@
+.team {
+  padding: 60px 0;
+  background-color: getColor('cum');
+  & h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: 1.08px;
+    text-align: center;
+  }
+  &__list {
+    padding: 0px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__elem {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    & figure {
+      background-color: #ffffff;
+    }
+    &__figcap {
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      & h3 {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      & span {
+        color: getColor('lightgray');
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    &__image {
+      width: 460px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .team {
+    &__list {
+      width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__elem {
+      &__image {
+        width: 354px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+    &__list {
+      flex-wrap: nowrap;
+    }
+    &__elem {
+      &__image {
+        width: 270px;
+      }
+    }
+  }
+}

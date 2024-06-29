@@ -1,10 +1,20 @@
-$colors:
-(
-    'lightblue': #2196F3,
-    'lightgray': #757575,
-    'cum' : #F5F4FA,
+$colors: (
+  'lightblue': #2196f3,
+  'lightgray': #757575,
+  'cum': #f5f4fa,
 );
-@function getColor($key) 
-{
-    @return map-get($colors, $key);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+.is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
