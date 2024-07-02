@@ -2,8 +2,6 @@
   padding: 60px 0;
 
   &__elem {
-    width: 450px;
-
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -35,13 +33,15 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: inherit;
       gap: 30px;
     }
     &__elem {
-      width: 354px;
+      max-width: 354px;
       &:not(:last-child) {
         margin-bottom: 0;
+      }
+      & svg {
+        max-width: inherit;
       }
     }
   }

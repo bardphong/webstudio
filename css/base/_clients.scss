@@ -13,7 +13,7 @@
     gap: 30px;
   }
   &__elem {
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     border-style: solid;
     border-width: 1px;
@@ -24,7 +24,7 @@
     align-items: center;
     fill: #afb1b8;
     & svg {
-      width: 160px;
+      max-width: 160px;
       height: 60px;
       fill: #afb1b8;
     }
@@ -39,10 +39,8 @@
 }
 @media (min-width: 768px) {
   .clients {
-    &__list {
-      width: inherit;
-    }
     &__elem {
+      max-width: none;
       width: 226px;
     }
   }
