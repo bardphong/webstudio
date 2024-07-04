@@ -11,9 +11,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 450px;
   }
   &__elem {
-    max-width: 210px;
+    width: calc((100% - 30px) / 2);
     height: 92px;
     border-style: solid;
     border-width: 1px;
@@ -39,9 +40,12 @@
 }
 @media (min-width: 768px) {
   .clients {
+    &__list {
+      max-width: 100%;
+    }
     &__elem {
       max-width: none;
-      width: 226px;
+      width: calc((100% - 60px) / 3);
     }
   }
 }
@@ -49,7 +53,7 @@
   .clients {
     padding: 94px 0;
     &__elem {
-      width: 170px;
+      width: calc((100% - 150px) / 6);
     }
   }
 }

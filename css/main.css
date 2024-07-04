@@ -12,6 +12,11 @@
   margin: -1px;
 }
 
+.hidden {
+  opacity: 0;
+  z-index: -100;
+}
+
 .logo {
   display: inline-block;
   font-size: 24px;
@@ -108,7 +113,7 @@ a:visited {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -139,7 +144,7 @@ header {
 
 .header__menu {
   position: fixed;
-  display: none;
+  display: flex;
   overflow: hidden;
   padding: 48px 40px;
   background-color: white;
@@ -202,6 +207,9 @@ header {
     color: #2196f3;
   }
   .header__burger {
+    display: none;
+  }
+  .header__menu {
     display: none;
   }
   .header__nav {
@@ -635,18 +643,16 @@ footer .social__elem {
   font-weight: 400;
 }
 .team__elem__image {
-  max-width: 450px;
-  display: none;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .team__list {
-    width: inherit;
     display: flex;
     flex-wrap: wrap;
   }
-  .team__elem__image {
-    width: 354px;
+  .team__elem figure {
+    max-width: 354px;
   }
 }
 @media (min-width: 1200px) {
@@ -655,10 +661,6 @@ footer .social__elem {
   }
   .team__list {
     flex-wrap: nowrap;
-  }
-  .team__elem__image {
-    width: 270px;
-    display: block;
   }
 }
 .clients {
@@ -675,9 +677,10 @@ footer .social__elem {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 450px;
 }
 .clients__elem {
-  max-width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
   border-style: solid;
   border-width: 1px;
@@ -702,9 +705,12 @@ footer .social__elem {
 }
 
 @media (min-width: 768px) {
+  .clients__list {
+    max-width: 100%;
+  }
   .clients__elem {
     max-width: none;
-    width: 226px;
+    width: calc((100% - 60px) / 3);
   }
 }
 @media (min-width: 1200px) {
@@ -712,7 +718,7 @@ footer .social__elem {
     padding: 94px 0;
   }
   .clients__elem {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
 }
 .main__section {
@@ -882,11 +888,17 @@ footer .social__elem {
   line-height: 30px;
 }
 .modal__info__list {
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 12px;
   margin-bottom: 20px;
+}
+@media (max-width: 449px) {
+  .modal__info__list {
+    width: calc(100vw - 110px);
+  }
 }
 .modal__info__elem {
   position: relative;
@@ -1017,10 +1029,9 @@ footer .social__elem {
     left: 50%;
     top: 50%;
     background-color: #fefefe;
-    width: 528px;
-    padding: 40px 0;
     transform: translate(-50%, -50%);
     border-radius: 4px;
+    max-width: 528px;
   }
   .modal__info {
     display: flex;
@@ -1038,6 +1049,7 @@ footer .social__elem {
     gap: 10px;
     margin-top: 12px;
     margin-bottom: 20px;
+    width: 100%;
   }
   .modal__info__elem {
     position: relative;

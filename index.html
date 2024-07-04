@@ -18,6 +18,7 @@
   </head>
   <body>
     <header>
+
       <div class="container">
         <a class="logo" href="https://webstudio.is" target="_blank">
           <span class="logo__title1">Web</span
@@ -26,7 +27,7 @@
             <svg class="header__burger" width="24" height="16">
             <use href="./assets/svgs/burger.svg#burger"></use>
             </svg>
-            <div class="header__menu">
+            <div class="header__menu is-hidden">
                 <svg class="header__close" width="19" height="19">
                     <use href="./assets/svgs/cancel.svg#icon-cancel"></use>
                 </svg>
@@ -74,7 +75,7 @@
             <li class="header__nav__item">
               <a class="header__nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header__nav__item"><a class="header__nav__link" href="#">Контакты</a></li>
+            <li class="header__nav__item"><a class="header__nav__link header__nav__link__contacts" href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header__contacts">
@@ -94,6 +95,7 @@
       </div>
     </header>
     <main>
+      <script src="./js/index.js" defer></script>
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -437,7 +439,7 @@
       </div>
     </footer>
   </body>
-<!-- <div class="modal">
+<div class="modal is-hidden">
     <div class="modal__content">
         <div class="close">
             <svg width="11px" height="11px">
@@ -505,6 +507,6 @@
 
     </div>
   
-</div> -->
+</div>
 
 </html>

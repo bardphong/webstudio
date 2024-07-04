@@ -30,11 +30,15 @@
       line-height: 30px;
     }
     &__list {
+      width: 370px;
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-top: 12px;
       margin-bottom: 20px;
+      @media (max-width: 449px) {
+        width: calc(100vw - 110px);
+      }
     }
     &__elem {
       position: relative;
@@ -164,10 +168,9 @@
       left: 50%;
       top: 50%;
       background-color: #fefefe;
-      width: 528px;
-      padding: 40px 0;
       transform: translate(-50%, -50%);
       border-radius: 4px;
+      max-width: 528px;
     }
     &__info {
       display: flex;
@@ -184,6 +187,7 @@
         gap: 10px;
         margin-top: 12px;
         margin-bottom: 20px;
+        width: 100%;
       }
       &__elem {
         position: relative;

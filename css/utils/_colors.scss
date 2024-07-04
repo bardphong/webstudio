@@ -18,3 +18,7 @@ $colors: (
   clip-path: inset(50%);
   margin: -1px;
 }
+.hidden {
+  opacity: 0;
+  z-index: -100;
+}
