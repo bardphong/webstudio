@@ -4,7 +4,6 @@ const headerMenu = document.querySelector('.header__menu');
 const heroButton = document.querySelector('.hero__button');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.close');
-const navButton = document.querySelector('.nav__button');
 
 function onBurgerClick() {
   headerMenu.classList.toggle('is-hidden');
@@ -12,13 +11,11 @@ function onBurgerClick() {
 function onModalClick() {
   modal.classList.toggle('is-hidden');
 }
-function onNavButtonClick(){
-  navButton.classList.toggle('nav__button--current');
-}
 
 burger.addEventListener('click', onBurgerClick);
 headerClose.addEventListener('click', onBurgerClick);
 
+if (heroButton) {
 heroButton.addEventListener('click', onModalClick);
 modalClose.addEventListener('click', onModalClick);
-navButton.addEventListener('click', onNavButtonClick);
+}

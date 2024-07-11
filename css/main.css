@@ -458,7 +458,7 @@ footer .social__elem {
 .hero {
   text-align: center;
   padding: 118px 0px;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/assets/pictures/hero_img.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../assets/pictures/hero_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -485,6 +485,7 @@ footer .social__elem {
   width: 200px;
   height: 50px;
   margin-top: 30px;
+  border: none;
 }
 
 @media (min-width: 768px) {
